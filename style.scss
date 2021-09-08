@@ -1,0 +1,218 @@
+$verydark:hsl(183, 100%, 15%);
+$darkgreyish:hsl(186, 14%, 43%);
+$greydark: hsl(184, 14%, 56%);
+$cyan:hsl(185, 41%, 84%);
+$lightcyan:hsl(189, 41%, 97%);
+$white:hsl(0, 0%, 100%);
+$bg-color:hsl(185, 42%, 84%);
+$strong-cyan:hsl(172, 67%, 45%);
+
+$font-size: 62.5%;
+
+$border-r: 20px;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $bg-color;
+    font-family: "Space Mono", monospace;
+    font-size: $font-size;
+    .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .logo{
+            margin: 5rem 0 3.5rem 0;
+        }
+        .card-container{
+            background-color: $white;
+            width: 100%;
+            
+            border-radius: $border-r;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: 2rem;
+            .left{
+                
+                width:100%;
+                display: flex;
+                flex-direction: column;
+                gap:2.6rem;
+                
+                    .label-wrapper{
+                        display: flex;
+                        align-items: center;
+                        label{
+                            color: $darkgreyish;
+                            font-weight: 700;
+                            font-size: 1rem;
+                        }
+                    }
+                    .text-input{
+                        background-color: $lightcyan;
+                        border: none;
+                        width: 100%;
+                        border-radius: 0.5rem;
+                        color: $verydark;
+                        font-family: "Space Mono", monospace;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        text-align: right;
+                        padding: 0.5rem 1.5rem;
+
+                        &:focus{
+                            outline: none;
+                            border: 2px solid $strong-cyan;
+                        }
+                        
+                
+                    }
+                    .input-wrapper{
+                        position: relative;
+                        img{
+                            position: absolute;
+                            left:0.5rem;
+                            top:1rem;
+                        }
+                    }
+                    .btn-wrapper{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap:1.5rem;
+                        padding: 0.5rem;
+                        
+
+                        button{
+                            width:45%;
+                            text-align: center;
+                            background-color: $verydark;
+                            color: $white;
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                            border-radius: 0.5rem;
+                            padding: 0.4rem 0;
+                            font-family: "Space Mono", monospace;
+                        }
+                        .text-input{
+                            width: 45%;
+                            font-size:1.4rem;
+                            
+                        }
+
+                    }
+                
+            }
+            .right{
+                background-color: $verydark;
+                width: 100%;
+                border-radius: $border-r;
+                padding: 1rem;
+                .line-wrapper{
+                    .line-output{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin: 1rem 0;
+
+                        .title{
+                            color: $white;
+                            font-weight: 700;
+                            font-size: 1rem;
+                        }
+                        .desc{
+                            color: $darkgreyish;
+                            font-weight: 700;
+                            font-size: 0.7rem;
+                        }
+                        .value{
+                            color: $strong-cyan;
+                            font-weight: 700;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                button{
+                    width:100%;
+                    background-color:$strong-cyan;
+                    color: $verydark;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    border-radius: 0.5rem;
+                    padding: 1rem 0;
+                    margin-top: 2rem;
+                    
+
+                }
+                
+            }
+        }
+
+    }
+}
+
+
+@media screen and (min-width:1440px){
+    body{
+        .container{
+                .card-container{
+                    width: 64%;
+                    flex-direction: row;
+                    align-items: stretch;
+                    border-radius: $border-r;
+                    padding: 2rem;
+                    gap:1.5rem;
+                    .right{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding:2rem;
+                        .line-wrapper{
+                            .line-output{
+                                margin:0.5rem 0 2.4rem 0;
+                                .value{
+                                    font-size: 3rem;
+                                }
+                            }
+                        }
+                        
+                    }
+                    .left{
+                        width: 100%;
+                        .btn-wrapper{
+                            button{
+                                width:29%;
+                            }
+                            .text-input{
+                                width: 29%;
+                                font-size: 1.08rem;
+                            }
+                        }
+                    }
+                   
+                }
+            
+            
+        }
+    }
+}
+    
+    
+
+
+

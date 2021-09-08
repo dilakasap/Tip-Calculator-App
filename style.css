@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #c5e4e7;
+  font-family: "Space Mono", monospace;
+  font-size: 62.5%;
+}
+
+body .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .logo {
+  margin: 5rem 0 3.5rem 0;
+}
+
+body .container .card-container {
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+body .container .card-container .left {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.6rem;
+}
+
+body .container .card-container .left .label-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .card-container .left .label-wrapper label {
+  color: #5e7a7d;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+body .container .card-container .left .text-input {
+  background-color: #f4fafa;
+  border: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: #00494d;
+  font-family: "Space Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: right;
+  padding: 0.5rem 1.5rem;
+}
+
+body .container .card-container .left .text-input:focus {
+  outline: none;
+  border: 2px solid #26c0ab;
+}
+
+body .container .card-container .left .input-wrapper {
+  position: relative;
+}
+
+body .container .card-container .left .input-wrapper img {
+  position: absolute;
+  left: 0.5rem;
+  top: 1rem;
+}
+
+body .container .card-container .left .btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0.5rem;
+}
+
+body .container .card-container .left .btn-wrapper button {
+  width: 45%;
+  text-align: center;
+  background-color: #00494d;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0;
+  font-family: "Space Mono", monospace;
+}
+
+body .container .card-container .left .btn-wrapper .text-input {
+  width: 45%;
+  font-size: 1.4rem;
+}
+
+body .container .card-container .right {
+  background-color: #00494d;
+  width: 100%;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+body .container .card-container .right .line-wrapper .line-output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 0;
+}
+
+body .container .card-container .right .line-wrapper .line-output .title {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+body .container .card-container .right .line-wrapper .line-output .desc {
+  color: #5e7a7d;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+body .container .card-container .right .line-wrapper .line-output .value {
+  color: #26c0ab;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+body .container .card-container .right button {
+  width: 100%;
+  background-color: #26c0ab;
+  color: #00494d;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 1440px) {
+  body .container .card-container {
+    width: 64%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    border-radius: 20px;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+  body .container .card-container .right {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2rem;
+  }
+  body .container .card-container .right .line-wrapper .line-output {
+    margin: 0.5rem 0 2.4rem 0;
+  }
+  body .container .card-container .right .line-wrapper .line-output .value {
+    font-size: 3rem;
+  }
+  body .container .card-container .left {
+    width: 100%;
+  }
+  body .container .card-container .left .btn-wrapper button {
+    width: 29%;
+  }
+  body .container .card-container .left .btn-wrapper .text-input {
+    width: 29%;
+    font-size: 1.08rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
